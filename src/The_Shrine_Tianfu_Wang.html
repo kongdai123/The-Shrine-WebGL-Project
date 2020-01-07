@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>The_Shrine_Tianfu_Wang</title>
+  </head>
+  <script type="text/javascript" src="../lib/dat.gui.js"></script>
+
+  <body onload="main()">
+    <canvas id="webgl" width="600" height="600">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <p>Welcome To <b>The Shrine</b>! This program is made by Tianfu Wang. NetId: twv0888</p>
+    <p>Thank you Prof. Tumblin, Alex Ayerdi, and Vincent Bommier for providing the beautiful starter library code!</p>
+    <p  id = 'camera'>  
+    </p>
+
+    <p><a href="./Instructions.html" 
+  target="popup" 
+  onclick="window.open('./Instructions.html','popup','width=600,height=600'); return false;">
+    Control Instructions
+    </a></p>
+      <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/materials_Ayerdi.js"></script>
+    <script src="../lib/lights-JT.js"></script>
+    
+
+    <script src="../lib/cuon-matrix-quat03.js"></script>
+    <script src="Camera.js"></script>
+    <script src="Camera_Control.js"></script>
+    <script src="Lights.js"></script>
+
+    <script src = "shaders.js"></script> 
+    <script src = "shader_multi_lights.js"></script> 
+
+    <script src="Generate_Drawings.js"></script>
+
+
+<!-- YOU SHOULD UPGRADE to Brandon Jones' far-faster, 
+      far more complete vector/matrix/quaternion library: (Google it!)
+		<script src="../lib/glmatrix.js"></script>
+--> 
+		<script src="VBObox-Lib.js"></script>
+    	<script src="VboBox2.js"></script>
+
+    <script src="objects.js"></script>
+        <script src = "UI.js"></script> 
+
+    <script src="MultiShader.js"></script>
+  </body>
+  <style>
+  p{
+    line-height: 80%;
+  }
+  .box2 {
+
+    display: block;
+    float: left;
+    width: 200px;
+    height: 100px;
+
+  }
+</style>
+
+</html>
